@@ -58,9 +58,12 @@ public class DIUImageMeassure extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DIUShop");
-        setMinimumSize(new java.awt.Dimension(915, 815));
-        setPreferredSize(new java.awt.Dimension(915, 815));
+        setMinimumSize(new java.awt.Dimension(915, 500));
+        setPreferredSize(new java.awt.Dimension(915, 500));
         setResizable(false);
+
+        menuPanel.setMaximumSize(new java.awt.Dimension(748, 162));
+        menuPanel.setMinimumSize(new java.awt.Dimension(748, 162));
 
         meassuresPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Medidas Estadísticas"));
         meassuresPanel.setToolTipText("Meassures section");
@@ -141,7 +144,6 @@ public class DIUImageMeassure extends javax.swing.JFrame {
         meassuresPanelLayout.setHorizontalGroup(
             meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(meassuresPanelLayout.createSequentialGroup()
-                .addGap(83, 83, 83)
                 .addGroup(meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, meassuresPanelLayout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -171,12 +173,11 @@ public class DIUImageMeassure extends javax.swing.JFrame {
                             .addGroup(meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(avgGreenField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(avgRedField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addGap(0, 171, Short.MAX_VALUE))
         );
         meassuresPanelLayout.setVerticalGroup(
             meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(meassuresPanelLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
                 .addGroup(meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
@@ -192,7 +193,7 @@ public class DIUImageMeassure extends javax.swing.JFrame {
                     .addComponent(maxGreenField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(avgGreenField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(meassuresPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 1, Short.MAX_VALUE)
                         .addGroup(meassuresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(jLabel4)
                             .addComponent(minGreenField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -201,8 +202,7 @@ public class DIUImageMeassure extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(maxBlueField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(minBlueField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(avgBlueField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67))
+                    .addComponent(avgBlueField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         openButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/open.png"))); // NOI18N
@@ -221,14 +221,14 @@ public class DIUImageMeassure extends javax.swing.JFrame {
             .addGroup(optionsPanelLayout.createSequentialGroup()
                 .addGap(168, 168, 168)
                 .addComponent(openButton)
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         optionsPanelLayout.setVerticalGroup(
             optionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optionsPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(openButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114))
+                .addGap(61, 61, 61))
         );
 
         javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
@@ -242,19 +242,22 @@ public class DIUImageMeassure extends javax.swing.JFrame {
         );
         menuPanelLayout.setVerticalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(optionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(meassuresPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(optionsPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(meassuresPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout imagePanelLayout = new javax.swing.GroupLayout(imagePanel);
         imagePanel.setLayout(imagePanelLayout);
         imagePanelLayout.setHorizontalGroup(
             imagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 913, Short.MAX_VALUE)
+            .addGap(0, 746, Short.MAX_VALUE)
         );
         imagePanelLayout.setVerticalGroup(
             imagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 534, Short.MAX_VALUE)
+            .addGap(0, 149, Short.MAX_VALUE)
         );
 
         scrollPanel.setViewportView(imagePanel);
@@ -263,13 +266,14 @@ public class DIUImageMeassure extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(scrollPanel)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addComponent(scrollPanel)
+                .addComponent(menuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(scrollPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 536, Short.MAX_VALUE)
+                .addComponent(scrollPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -287,7 +291,7 @@ public class DIUImageMeassure extends javax.swing.JFrame {
         int open = fc.showOpenDialog(rootPane);
         if (open == JFileChooser.APPROVE_OPTION) {
             imagePanel.setImage(fc.getSelectedFile());
-            fixDimensions();            
+            fixDimensions();
         }
     }//GEN-LAST:event_openButtonActionPerformed
 
@@ -355,7 +359,7 @@ public class DIUImageMeassure extends javax.swing.JFrame {
             @Override
             public void adjustmentValueChanged(AdjustmentEvent e) {
                 if (imagePanel.getImage() != null) {
-                    EstadisticasImagen cE = new EstadisticasImagen();
+                    EstadisticasImagen cE = EstadisticasImagen.getInstance();
                     cE.calculaEstadisticas(imagePanel.getImage(), scrollPanel.getViewport());
                     maxRedField.setText(cE.maximo[cE.ROJO] + "");
                     minRedField.setText(cE.minimo[cE.ROJO] + "");
@@ -378,20 +382,20 @@ public class DIUImageMeassure extends javax.swing.JFrame {
                 imagePanel.getImage().getWidth(),
                 imagePanel.getImage().getHeight());
         
-        if (imageSize.width <= 909 && imageSize.height <= 484) {
+        if (imageSize.width <= 909 && imageSize.height <= 285) {
             scrollPanel.setSize(imageSize);
             scrollPanel.getViewport().setSize(imageSize);
-        } else if (imageSize.width <= 909 || imageSize.height <= 484) {
+        } else if (imageSize.width <= 909 || imageSize.height <= 285) {
             if (imageSize.width <= 909) {
-                scrollPanel.setSize(imageSize.width, 484);
-                scrollPanel.getViewport().setSize(imageSize.width, 484);
+                scrollPanel.setSize(imageSize.width, 285);
+                scrollPanel.getViewport().setSize(imageSize.width, 285);
             } else {
                 scrollPanel.setSize(909, imageSize.height);
                 scrollPanel.getViewport().setSize(909, imageSize.height);
             }
         } else if (imageSize.width > scrollPanel.getWidth() || imageSize.height > scrollPanel.getHeight()) {
-            scrollPanel.setSize(909, 484); // 909 915 | 484 536
-            scrollPanel.getViewport().setSize(909, 484);
+            scrollPanel.setSize(909, 285); // 909 915 | 285 536
+            scrollPanel.getViewport().setSize(909, 285);
         }
     }
 }
